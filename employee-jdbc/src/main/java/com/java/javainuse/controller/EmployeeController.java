@@ -29,5 +29,11 @@ public class EmployeeController {
 	public void insertEmployee(@RequestBody Employee employee) {
 		employeeService.insertEmployee(employee);
 	}
+	
+	@RequestMapping(value = "/test", method = RequestMethod.GET)
+	public String test() {
+
+		return "testing";
+	}
 
 }
