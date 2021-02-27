@@ -13,7 +13,7 @@ public class JpaConfig {
 	public DataSource getDataSource() {
 		DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
 		//dataSourceBuilder.url("jdbc:mysql://localhost/test?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false");
-		dataSourceBuilder.url("jdbc:mysql://mysqldb/test?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false");
+		dataSourceBuilder.url("jdbc:mysql://mysqldb/test");
 		dataSourceBuilder.username("root");
 		dataSourceBuilder.password("root");
 		return dataSourceBuilder.build();
